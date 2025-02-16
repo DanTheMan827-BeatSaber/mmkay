@@ -98,7 +98,7 @@ function(process_asset_mmkay REL_FILE)
     set(ASSET_DECLARATION "${NAMESPACE_OPEN}
 ${INDENT}/**
 ${INDENT} * Binary asset representing the file \"${REL_FILE}\".
-${INDENT} * Embedded with love (and and a little objcopy magic), mmkay?
+${INDENT} * Embedded with love (and a little objcopy magic), mmkay?
 ${INDENT} */
 ${INDENT}const IncludedAsset ${LOCAL_NAME} {
 ${INDENT}    ::IncludedAssets::__AssetExterns__::_binary_${FULL_SYMBOL}_start,
