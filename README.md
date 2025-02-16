@@ -1,6 +1,5 @@
-# mmkay.cmake README
-
-This module handles asset embedding with humor and style. It provides CMake a CMake include that processes asset files and generates a header to access the embedded binary data.
+# Mmkay
+This module handles asset embedding with humor and style. It provides a CMake include that processes asset files and generates a header to access the embedded binary data.
 
 ## Usage
 - Make sure the dependency is added with `qpm dependency add mmkay`.
@@ -15,20 +14,22 @@ Sit back and relax, mmkay?
 
 ## How It Works
 
-**Asset Processing:**
+### Asset Processing 
 Each file in the `assets` directory is processed:
 - A prepended file is generated.
 - A binary object is created from this prepended file.
 - Corresponding external symbols are declared for later use in C++.
 
-**Header Generation:**
+### Header Generation
 An asset header is constructed with:
 - External C symbol declarations generated for each asset.
 - Asset declarations wrapped in namespaces reflecting their original directory structure.
 - Utility conversions to work effortlessly with C++ asset types like `std::string_view` and `std::span`.
 
-**Linking:**
+### Linking
 An object library is created from the generated binary files and linked with the main project.
 
 ## Why The Name?
+**Mmkay stands for:** Multi‑Modal Kit (for) Asset Yeilding...
+
 ![I like South Park, mmkay?](mmkay.png)
