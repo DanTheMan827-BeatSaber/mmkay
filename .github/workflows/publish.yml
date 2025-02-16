@@ -42,8 +42,7 @@ jobs:
       - name: Create a release using action-github-release
         uses: softprops/action-gh-release@v2
         with:
-          name: "Auto Hooks v${{ steps.version.outputs.autohooks_version}} for beatsaber-hook v${{ steps.version.outputs.hooks_version}}"
-          body: "Auto Hooks v${{ steps.version.outputs.autohooks_version}} built from beatsaber-hook v${{ steps.version.outputs.hooks_version}}"
+          name: "${{ steps.version.outputs.tag }}, mmkay?"
           tag_name: "${{ steps.version.outputs.tag}}"
           draft: false
           generate_release_notes: true
