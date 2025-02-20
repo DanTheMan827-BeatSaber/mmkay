@@ -195,7 +195,7 @@ struct IncludedAsset {
     Array<uint8_t>* array;
 };
 
-#define PNG_SPRITE(name) BSML::Utilities::LoadSpriteRaw(static_cast<ArrayW<uint8_t>>(IncludedAssets::name##_png))
+#define PNG_SPRITE(asset) BSML::Utilities::LoadSpriteRaw(static_cast<ArrayW<uint8_t>>(asset))
 
 /**
  * Namespace containing all embedded assets.
